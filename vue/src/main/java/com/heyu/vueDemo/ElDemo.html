@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+    {{ message }}
+    <h2 id="app" class="app">
+        {{ message }}
+        <span>{{message}}</span>
+    </h2>
+
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var app=new Vue({
+        //id选择器
+        // el:"#app",
+        //class选择器
+        // el:".app",
+        //标签选择器
+        // el:"div",
+        el:"#body",
+        data:{
+            message:"黑马程序员"
+        }
+    })
+</script>
+
+</body>
+</html>
